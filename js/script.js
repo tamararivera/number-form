@@ -12,10 +12,22 @@ function addNumber(event) {
   event.preventDefault();
 }
 
+function cleanMe() {
+  document.addForm.number.value = "";
+  numbers = [];
+  sum = 0;
+  updateResults();
+  event.preventDefault();
+}
+
 function updateResults() {
   document.getElementById("count").innerHTML = numbers.length;
   document.getElementById("sum").innerHTML = sum;
-  document.getElementById("average").innerHTML = sum/numbers.length;
+  var average = sum/numbers.length;
+  if(isNaN(average)) {
+    average = 0;
+  }
+  document.getElementById("average").innerHTML = average;
   
 }
 

@@ -11,18 +11,19 @@
     <h1>Numbers form</h1>
   </header>
   <main>
-    <form onsubmit="addNumber(event)" name="addForm">
+    <form name="addForm">
       <label>
         Enter a number here:
         <input type="number" step="any" name="number">
       </label>
-      <input type="submit">
-      <div id="results">
-        <p>Count: <span id="count">0</span></p>
-        <p>Sum: <span id="sum">0</span></p>
-        <p>Average: <span id="average">0</span></p>
-      </div>
+      <input type="submit" onclick="addNumber(event)">
+      <button type="button" onclick="cleanMe()">Reset</button>
     </form>
+    <div id="results">
+      <p>Count: <span id="count">0</span></p>
+      <p>Sum: <span id="sum">0</span></p>
+      <p>Average: <span id="average">0</span></p>
+    </div>
   </main>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
