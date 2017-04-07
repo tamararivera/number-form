@@ -13,11 +13,15 @@
   <main>
     <form onsubmit="addNumber(event)" name="addForm">
       <label>
-        Enter numbers here:
-        <input type="number" name="number">
+        Enter a number here:
+        <input type="number" step="any" name="number">
       </label>
       <input type="submit">
-      <div id="results"></div>
+      <div id="results">
+        <p>Count: <span id="count">0</span></p>
+        <p>Sum: <span id="sum">0</span></p>
+        <p>Average: <span id="average">0</span></p>
+      </div>
     </form>
   </main>
   <script type="text/javascript" src="js/script.js"></script>
