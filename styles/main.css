@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Arvo', serif;
+  margin: 0;
+  background: #adc2eb;
+  height: 100%;
+}
+
+main {
+  margin-left: 10%;
+  width: 80%;
+  background: #eaf0fa;
+  height: 100%;
+}
+
+main > * {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0.7rem;
+}
+
+#chart {
+  width: 97%;
+  height: 60%;
+}
