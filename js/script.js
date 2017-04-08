@@ -29,7 +29,7 @@ function updateResults() {
     average = 0;
   }
   document.getElementById("average").innerHTML = average;
-  if(average !== 0) {
+  if(numbers.length !== 0) {
     drawVisualization(); 
   } else {
     document.getElementById('chart').innerHTML = "";
