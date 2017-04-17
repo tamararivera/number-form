@@ -29,6 +29,10 @@ h1 {
   padding: 0.7rem;
 }
 
+label, textarea {
+  display: block;
+}
+
 #chart {
   width: 97%;
   height: 60%;
